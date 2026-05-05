@@ -566,32 +566,90 @@ body{background:#060606;min-height:100vh;margin:0;padding:0;font-family:var(--fo
       </div>
 
       <!-- Podcasts -->
+      <!-- ══ PODCASTS TAB ══ -->
       <div id="ep0" class="ep">
-        <div class="sh"><h2>Playlists</h2></div>
+        <div class="sh"><h2>Trending Now</h2></div>
         <div class="hscroll">
-          <div class="pl-card" onclick="toast('▶ Playing','The History Playlist')"><div class="pl-art" style="background:linear-gradient(135deg,#1a1a2e,#2a3a6e);">📚</div><div class="pl-ov"><div class="pl-count">10 Items</div><div class="pl-title">The History Playlist</div><div class="pl-desc">Dive into the best history podcasts on Sounds & explore the…</div><div class="pl-play"><svg viewBox="0 0 24 24" fill="white" width="14" height="14"><polygon points="5 3 19 12 5 21 5 3"/></svg></div></div></div>
-          <div class="pl-card" onclick="toast('▶ Playing','Latest News Playlist')"><div class="pl-art" style="background:linear-gradient(135deg,#2a0a0a,#6e1a1a);">📰</div><div class="pl-ov"><div class="pl-count">10 Items</div><div class="pl-title">Latest News Playlist</div><div class="pl-desc">Stay up to date with today's top headlines</div><div class="pl-play"><svg viewBox="0 0 24 24" fill="white" width="14" height="14"><polygon points="5 3 19 12 5 21 5 3"/></svg></div></div></div>
-          <div class="pl-card" onclick="toast('▶ Playing','True Crime Essentials')"><div class="pl-art" style="background:linear-gradient(135deg,#1a0a2e,#3a1a5a);">🔍</div><div class="pl-ov"><div class="pl-count">8 Items</div><div class="pl-title">True Crime Essentials</div><div class="pl-desc">The best investigative podcasts on BBC Sounds</div><div class="pl-play"><svg viewBox="0 0 24 24" fill="white" width="14" height="14"><polygon points="5 3 19 12 5 21 5 3"/></svg></div></div></div>
+          <div class="pl-card" onclick="toast('▶ Playing','The Traitors: Uncloaked')">
+            <div class="pl-art" style="background:linear-gradient(135deg,#1a0828,#2e1050);">🏰</div>
+            <div class="pl-ov"><div class="pl-count">6 Episodes</div><div class="pl-title">The Traitors: Uncloaked</div><div class="pl-desc">Behind the castle — what the cameras didn't show</div><div class="pl-play"><svg viewBox="0 0 24 24" fill="white" width="14" height="14"><polygon points="5 3 19 12 5 21 5 3"/></svg></div></div>
+          </div>
+          <div class="pl-card" onclick="toast('▶ Playing','True Crime Essentials')">
+            <div class="pl-art" style="background:linear-gradient(135deg,#1a0a2e,#3a1a5a);">🔍</div>
+            <div class="pl-ov"><div class="pl-count">8 Items</div><div class="pl-title">True Crime Essentials</div><div class="pl-desc">The best investigative podcasts on BBC Sounds</div><div class="pl-play"><svg viewBox="0 0 24 24" fill="white" width="14" height="14"><polygon points="5 3 19 12 5 21 5 3"/></svg></div></div>
+          </div>
+          <div class="pl-card" onclick="toast('▶ Playing','The History Playlist')">
+            <div class="pl-art" style="background:linear-gradient(135deg,#1a1a2e,#2a3a6e);">📚</div>
+            <div class="pl-ov"><div class="pl-count">10 Items</div><div class="pl-title">The History Playlist</div><div class="pl-desc">Dive into the best history podcasts on Sounds</div><div class="pl-play"><svg viewBox="0 0 24 24" fill="white" width="14" height="14"><polygon points="5 3 19 12 5 21 5 3"/></svg></div></div>
+          </div>
         </div>
+
         <div class="sh"><h2>New Releases</h2></div>
         <div style="display:grid;grid-template-columns:1fr 1fr;gap:4px;padding:0 18px;">
+          <div style="border-radius:6px;overflow:hidden;cursor:pointer;height:160px;background:linear-gradient(160deg,#1a0828,#0e0818);display:flex;align-items:flex-end;padding:12px;" onclick="toast('▶ Playing','Celebrity Traitors: Uncloaked S2')"><span style="font-size:16px;font-weight:900;color:#fff;line-height:1.2;">Celebrity<br>Traitors:<br>Uncloaked</span></div>
           <div style="border-radius:6px;overflow:hidden;cursor:pointer;height:160px;background:linear-gradient(160deg,#0e0e1e,#0a0a12);display:flex;align-items:flex-end;padding:12px;" onclick="toast('▶ Playing','Crime Next Door')"><span style="font-size:18px;font-weight:900;color:#fff;line-height:1.2;">Crime<br>Next Door</span></div>
-          <div style="border-radius:6px;overflow:hidden;cursor:pointer;height:160px;background:linear-gradient(160deg,#0a2010,#1a3a1a);display:flex;align-items:flex-end;padding:12px;" onclick="toast('▶ Playing','Race Across the World')"><span style="font-size:16px;font-weight:900;color:#fff;line-height:1.2;">Race Across<br>the World</span></div>
         </div>
-        <div class="sh"><h2>Beyond The Headlines</h2></div>
-        <div class="row" onclick="toast('▶ Playing','Newscast — 36 mins')"><div class="row-art" style="background:linear-gradient(135deg,#0a2a2a,#1a4a4a);">📣</div><div class="row-info"><div class="row-title">Newscast</div><div class="row-sub">The Morgan McSweeney Evidence</div><div class="row-dur">36 mins</div></div><div class="row-play"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg></div></div>
+
+        <div class="sh"><h2>Because You Watched The Traitors</h2></div>
+        <div class="row" onclick="toast('▶ Playing','Newscast — 36 mins')">
+          <div class="row-art" style="background:linear-gradient(135deg,#0a2a2a,#1a4a4a);">📣</div>
+          <div class="row-info"><div class="row-title">Newscast</div><div class="row-sub">The Morgan McSweeney Evidence</div><div class="row-dur">36 mins</div></div>
+          <div class="row-play"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg></div>
+        </div>
         <div class="div"></div>
-        <div class="row" onclick="toast('▶ Playing','The Explanation')"><div class="row-art" style="background:linear-gradient(135deg,#1a1a0a,#3a3a1a);">📱</div><div class="row-info"><div class="row-title">The Explanation</div><div class="row-sub">The Media Show: Investigating Sam Altman</div><div class="row-dur">28 mins</div></div><div class="row-play"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg></div></div>
+        <div class="row" onclick="toast('▶ Playing','Desert Island Discs — Michael Sheen')">
+          <div class="row-art" style="background:linear-gradient(135deg,#1a0a2a,#2a1a4a);">🏝️</div>
+          <div class="row-info"><div class="row-title">Desert Island Discs</div><div class="row-sub">Michael Sheen — the records that shaped him</div><div class="row-dur">42 mins</div></div>
+          <div class="row-play"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg></div>
+        </div>
+        <div class="div"></div>
+        <div class="row" onclick="toast('▶ Playing','Louis Theroux Podcast — latest')">
+          <div class="row-art" style="background:linear-gradient(135deg,#0a1a2a,#1a3a5a);">🎙️</div>
+          <div class="row-info"><div class="row-title">The Louis Theroux Podcast</div><div class="row-sub">My Favourite Weirdos — Season 3</div><div class="row-dur">58 mins</div></div>
+          <div class="row-play"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg></div>
+        </div>
+        <div class="div"></div>
+        <div class="row" onclick="toast('▶ Playing','Romesh vs — latest episode')">
+          <div class="row-art" style="background:linear-gradient(135deg,#1a1a0a,#3a3a1a);">😄</div>
+          <div class="row-info"><div class="row-title">Romesh vs</div><div class="row-sub">Romesh Ranganathan takes on the world</div><div class="row-dur">31 mins</div></div>
+          <div class="row-play"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg></div>
+        </div>
       </div>
 
-      <!-- Music -->
+      <!-- ══ MUSIC TAB ══ -->
       <div id="ep1" class="ep" style="display:none;">
         <div class="sh"><h2>Live Music Now</h2><a class="ao" onclick="goNav(2)">All streams</a></div>
         <div class="hscroll">
-          <div class="ls-card" onclick="goNav(2)"><div class="ls-art" style="background:linear-gradient(135deg,#1c1506,#2e1a08);">⭐<div class="ls-badge"><span class="d"></span>Live</div></div><div class="ls-info"><div class="ls-stage" style="color:#E8A32A;">Celebrity Traitors</div><div class="ls-act">Celebrity Traitors</div><div class="ls-stn">Radio 2</div></div></div>
-          <div class="ls-card" onclick="toast('▶ Playing','BBC Radio 5 Live — The Ashes')"><div class="ls-art" style="background:linear-gradient(135deg,#1a2a1a,#2a5a2a);">🏏<div class="ls-badge"><span class="d"></span>Live</div></div><div class="ls-info"><div class="ls-stage">The Ashes</div><div class="ls-act">Eng vs Australia</div><div class="ls-stn">Radio 5 Live</div></div></div>
-          <div class="ls-card" onclick="toast('▶ Playing','Radio 1 — Greg James')"><div class="ls-art" style="background:linear-gradient(135deg,#1a1a2e,#2a2a6e);">1<div class="ls-badge"><span class="d"></span>Live</div></div><div class="ls-info"><div class="ls-stage">Radio 1</div><div class="ls-act">Greg James</div><div class="ls-stn">Radio 1</div></div></div>
+          <div class="ls-card" onclick="toast('▶ Playing','Radio 1 — Greg James')">
+            <div class="ls-art" style="background:linear-gradient(135deg,#1a0a2e,#3a0a5e);">1<div class="ls-badge"><span class="d"></span>Live</div><div class="ls-count">41k</div></div>
+            <div class="ls-info"><div class="ls-stage">Radio 1</div><div class="ls-act">Greg James</div><div class="ls-stn">Radio 1</div></div>
+          </div>
+          <div class="ls-card" onclick="toast('▶ Playing','6 Music — Mary Anne Hobbs')">
+            <div class="ls-art" style="background:linear-gradient(135deg,#1a0a2e,#4a0a6e);">6<div class="ls-badge"><span class="d"></span>Live</div><div class="ls-count">18k</div></div>
+            <div class="ls-info"><div class="ls-stage">6 Music</div><div class="ls-act">Mary Anne Hobbs</div><div class="ls-stn">Radio 6</div></div>
+          </div>
+          <div class="ls-card" onclick="toast('▶ Playing','Radio 2 — Zoe Ball')">
+            <div class="ls-art" style="background:linear-gradient(135deg,#1a1206,#3a2a08);">2<div class="ls-badge"><span class="d"></span>Live</div><div class="ls-count">22k</div></div>
+            <div class="ls-info"><div class="ls-stage">Radio 2</div><div class="ls-act">Zoe Ball</div><div class="ls-stn">Radio 2</div></div>
+          </div>
         </div>
+
+        <div class="sh"><h2>Featured Playlists</h2></div>
+        <div class="hscroll">
+          <div class="pl-card" onclick="toast('▶ Playing','Songs from the Traitors — the playlist')">
+            <div class="pl-art" style="background:linear-gradient(135deg,#1a0828,#2e1050);">🗡️</div>
+            <div class="pl-ov"><div class="pl-count">24 Tracks</div><div class="pl-title">Songs from the Castle</div><div class="pl-desc">Music from the Celebrity Traitors soundtrack</div><div class="pl-play"><svg viewBox="0 0 24 24" fill="white" width="14" height="14"><polygon points="5 3 19 12 5 21 5 3"/></svg></div></div>
+          </div>
+          <div class="pl-card" onclick="toast('▶ Playing','Late Night Vibes playlist')">
+            <div class="pl-art" style="background:linear-gradient(135deg,#0a1020,#1a2a40);">🌙</div>
+            <div class="pl-ov"><div class="pl-count">18 Tracks</div><div class="pl-title">Late Night Vibes</div><div class="pl-desc">Atmospheric music for dark evenings</div><div class="pl-play"><svg viewBox="0 0 24 24" fill="white" width="14" height="14"><polygon points="5 3 19 12 5 21 5 3"/></svg></div></div>
+          </div>
+          <div class="pl-card" onclick="toast('▶ Playing','Cinematic Scores playlist')">
+            <div class="pl-art" style="background:linear-gradient(135deg,#1a1a0a,#2a2a1a);">🎬</div>
+            <div class="pl-ov"><div class="pl-count">32 Tracks</div><div class="pl-title">Cinematic Scores</div><div class="pl-desc">Dramatic orchestral music for tense moments</div><div class="pl-play"><svg viewBox="0 0 24 24" fill="white" width="14" height="14"><polygon points="5 3 19 12 5 21 5 3"/></svg></div></div>
+          </div>
+        </div>
+
         <div class="sh"><h2>Browse all Music</h2></div>
         <div class="bg">
           <div class="bg-tile" onclick="toast('Browse','Blues')"><div class="bgi">🎸</div><div style="position:absolute;inset:0;background:rgba(0,0,0,.45);border-radius:6px;"></div><span class="bgl">Blues</span></div>
@@ -607,58 +665,184 @@ body{background:#060606;min-height:100vh;margin:0;padding:0;font-family:var(--fo
         </div>
       </div>
 
-      <!-- Audiobooks -->
+      <!-- ══ AUDIOBOOKS TAB ══ -->
       <div id="ep2" class="ep" style="display:none;">
         <div class="sh"><h2>Featured</h2></div>
         <div class="hscroll">
-          <div class="pl-card" onclick="toast('▶ Playing','Summer Reading playlist')"><div class="pl-art" style="background:linear-gradient(135deg,#1a2a1a,#2a4a2a);">📖</div><div class="pl-ov"><div class="pl-count">8 Items</div><div class="pl-title">Summer Reading</div><div class="pl-desc">Bestselling audiobooks to enjoy this summer</div><div class="pl-play"><svg viewBox="0 0 24 24" fill="white" width="14" height="14"><polygon points="5 3 19 12 5 21 5 3"/></svg></div></div></div>
-          <div class="pl-card" onclick="toast('▶ Playing','Thrillers & Crime')"><div class="pl-art" style="background:linear-gradient(135deg,#2a0a0a,#4a1a1a);">🔍</div><div class="pl-ov"><div class="pl-count">12 Items</div><div class="pl-title">Thrillers & Crime</div><div class="pl-desc">From cosy crime to dark psychological thrillers</div><div class="pl-play"><svg viewBox="0 0 24 24" fill="white" width="14" height="14"><polygon points="5 3 19 12 5 21 5 3"/></svg></div></div></div>
+          <div class="pl-card" onclick="toast('▶ Playing','Traitors & Liars — true deception stories')">
+            <div class="pl-art" style="background:linear-gradient(135deg,#1a0828,#2e1050);">🕯️</div>
+            <div class="pl-ov"><div class="pl-count">5 Books</div><div class="pl-title">Traitors &amp; Liars</div><div class="pl-desc">True stories of deception, betrayal and double agents</div><div class="pl-play"><svg viewBox="0 0 24 24" fill="white" width="14" height="14"><polygon points="5 3 19 12 5 21 5 3"/></svg></div></div>
+          </div>
+          <div class="pl-card" onclick="toast('▶ Playing','Thrillers & Crime collection')">
+            <div class="pl-art" style="background:linear-gradient(135deg,#2a0a0a,#4a1a1a);">🔍</div>
+            <div class="pl-ov"><div class="pl-count">12 Items</div><div class="pl-title">Thrillers &amp; Crime</div><div class="pl-desc">From cosy crime to dark psychological thrillers</div><div class="pl-play"><svg viewBox="0 0 24 24" fill="white" width="14" height="14"><polygon points="5 3 19 12 5 21 5 3"/></svg></div></div>
+          </div>
+          <div class="pl-card" onclick="toast('▶ Playing','Summer Reading playlist')">
+            <div class="pl-art" style="background:linear-gradient(135deg,#1a2a1a,#2a4a2a);">📖</div>
+            <div class="pl-ov"><div class="pl-count">8 Items</div><div class="pl-title">Summer Reading</div><div class="pl-desc">Bestselling audiobooks to enjoy this summer</div><div class="pl-play"><svg viewBox="0 0 24 24" fill="white" width="14" height="14"><polygon points="5 3 19 12 5 21 5 3"/></svg></div></div>
+          </div>
         </div>
+
         <div class="sh"><h2>New Releases</h2></div>
-        <div class="row" onclick="toast('▶ Playing','The Traitors: Uncloaked')"><div class="row-art" style="background:linear-gradient(135deg,#0a1a2a,#1a2a4a);">🎭</div><div class="row-info"><div class="row-title">The Traitors: Uncloaked</div><div class="row-sub">Celebrity Traitors Series 1: Episode 2 BONUS</div><div class="row-dur">45 mins</div></div><div class="row-play"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg></div></div>
+        <div class="row" onclick="toast('▶ Playing','The Spy Who Came in from the Cold')">
+          <div class="row-art" style="background:linear-gradient(135deg,#0a1020,#1a2a40);">🕵️</div>
+          <div class="row-info"><div class="row-title">The Spy Who Came in from the Cold</div><div class="row-sub">John le Carré — narrated by Tom Hollander</div><div class="row-dur">7 hrs 22 mins</div></div>
+          <div class="row-play"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg></div>
+        </div>
         <div class="div"></div>
-        <div class="row" onclick="toast('▶ Playing','Crime Next Door')"><div class="row-art" style="background:linear-gradient(135deg,#0e0e1e,#1a1a2e);">🚪</div><div class="row-info"><div class="row-title">Crime Next Door</div><div class="row-sub">Episode 3 — The Investigation Deepens</div><div class="row-dur">38 mins</div></div><div class="row-play"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg></div></div>
+        <div class="row" onclick="toast('▶ Playing','The Woman in the Window')">
+          <div class="row-art" style="background:linear-gradient(135deg,#1a0a0a,#3a1a1a);">🪟</div>
+          <div class="row-info"><div class="row-title">The Woman in the Window</div><div class="row-sub">A J Finn — psychological thriller</div><div class="row-dur">11 hrs 4 mins</div></div>
+          <div class="row-play"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg></div>
+        </div>
+        <div class="div"></div>
+        <div class="row" onclick="toast('▶ Playing','Succession — the unauthorised oral history')">
+          <div class="row-art" style="background:linear-gradient(135deg,#1a1a1a,#2a2a2a);">👔</div>
+          <div class="row-info"><div class="row-title">Succession: The Oral History</div><div class="row-sub">Behind the scenes of TV's greatest drama</div><div class="row-dur">9 hrs 18 mins</div></div>
+          <div class="row-play"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg></div>
+        </div>
+        <div class="div"></div>
+        <div class="row" onclick="toast('▶ Playing','Hannah Fry — Hello World')">
+          <div class="row-art" style="background:linear-gradient(135deg,#0a1a2a,#1a3a5a);">🤖</div>
+          <div class="row-info"><div class="row-title">Hello World</div><div class="row-sub">Hannah Fry — Being Human in the Age of Algorithms</div><div class="row-dur">6 hrs 12 mins</div></div>
+          <div class="row-play"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg></div>
+        </div>
+
+        <div class="sh"><h2>Narrated by Traitors Cast</h2></div>
+        <div class="row" onclick="toast('▶ Playing','Michael Sheen narrates — Under Milk Wood')">
+          <div class="row-art" style="background:linear-gradient(135deg,#1a0a2e,#2e1050);">🎭</div>
+          <div class="row-info"><div class="row-title">Under Milk Wood</div><div class="row-sub">Dylan Thomas · narrated by Michael Sheen</div><div class="row-dur">1 hr 45 mins</div></div>
+          <div class="row-play"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg></div>
+        </div>
+        <div class="div"></div>
+        <div class="row" onclick="toast('▶ Playing','Ross Kemp narrates — War Stories')">
+          <div class="row-art" style="background:linear-gradient(135deg,#1a0808,#3a1010);">🪖</div>
+          <div class="row-info"><div class="row-title">War Stories</div><div class="row-sub">Extraordinary accounts · narrated by Ross Kemp</div><div class="row-dur">8 hrs 33 mins</div></div>
+          <div class="row-play"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg></div>
+        </div>
       </div>
 
-      <!-- Sport -->
+      <!-- ══ SPORT TAB ══ -->
       <div id="ep3" class="ep" style="display:none;">
         <div class="sh"><h2>Live Sport Now</h2><a class="ao" onclick="goNav(2)">All streams</a></div>
         <div class="hscroll">
-          <div class="ls-card" onclick="toast('▶ Playing','The Ashes — Radio 5 Live')"><div class="ls-art" style="background:linear-gradient(135deg,#1a2a1a,#2a5a2a);">🏏<div class="ls-badge"><span class="d"></span>Live</div><div class="ls-count">22.4k</div></div><div class="ls-info"><div class="ls-stage">The Ashes</div><div class="ls-act">Eng vs Australia</div><div class="ls-stn">Radio 5 · Day 3</div></div></div>
-          <div class="ls-card" onclick="toast('▶ Playing','F1 British GP — Sports Extra')"><div class="ls-art" style="background:linear-gradient(135deg,#2a1a0a,#5a3a1a);">🏎️<div class="ls-badge"><span class="d"></span>Live</div><div class="ls-count">14.1k</div></div><div class="ls-info"><div class="ls-stage">F1 British GP</div><div class="ls-act">Qualifying</div><div class="ls-stn">Sports Extra</div></div></div>
-          <div class="ls-card" onclick="toast('⏰ Later','Wimbledon — starts 13:00')"><div class="ls-art dim" style="background:var(--s2);opacity:.7;">🎾<div class="ls-count" style="background:var(--odim);color:var(--orange);">2h</div></div><div class="ls-info"><div class="ls-stage">Wimbledon</div><div class="ls-act">Centre Court</div><div class="ls-stn">Radio 5 · 13:00</div></div></div>
+          <div class="ls-card" onclick="toast('▶ Playing','The Ashes — Radio 5 Live · Day 3')">
+            <div class="ls-art" style="background:linear-gradient(135deg,#1a2a1a,#2a5a2a);">🏏<div class="ls-badge"><span class="d"></span>Live</div><div class="ls-count">22.4k</div></div>
+            <div class="ls-info"><div class="ls-stage">The Ashes</div><div class="ls-act">Eng vs Australia</div><div class="ls-stn">Radio 5 · Day 3</div></div>
+          </div>
+          <div class="ls-card" onclick="toast('▶ Playing','F1 British GP — Sports Extra')">
+            <div class="ls-art" style="background:linear-gradient(135deg,#2a1a0a,#5a3a1a);">🏎️<div class="ls-badge"><span class="d"></span>Live</div><div class="ls-count">14.1k</div></div>
+            <div class="ls-info"><div class="ls-stage">F1 British GP</div><div class="ls-act">Qualifying</div><div class="ls-stn">Sports Extra</div></div>
+          </div>
+          <div class="ls-card" onclick="toast('⏰ Later','Wimbledon — starts 13:00')">
+            <div class="ls-art dim" style="background:var(--s2);opacity:.65;">🎾<div class="ls-count" style="background:var(--odim);color:var(--orange);">2h</div></div>
+            <div class="ls-info"><div class="ls-stage">Wimbledon</div><div class="ls-act">Centre Court</div><div class="ls-stn">Radio 5 · 13:00</div></div>
+          </div>
         </div>
-        <div class="sh"><h2>Sport Podcasts</h2></div>
-        <div class="row" onclick="toast('▶ Playing','Football Daily')"><div class="row-art" style="background:linear-gradient(135deg,#0a2a0a,#1a5a1a);">⚽</div><div class="row-info"><div class="row-title">Football Daily</div><div class="row-sub">Premier League: The Big Summer Preview</div><div class="row-dur">34 mins</div></div><div class="row-play"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg></div></div>
+
+        <div class="sh"><h2>Top Sport Podcasts</h2></div>
+        <div class="row" onclick="toast('▶ Playing','Football Daily — Premier League preview')">
+          <div class="row-art" style="background:linear-gradient(135deg,#0a2a0a,#1a5a1a);">⚽</div>
+          <div class="row-info"><div class="row-title">Football Daily</div><div class="row-sub">Premier League: The Big Summer Preview</div><div class="row-dur">34 mins</div></div>
+          <div class="row-play"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg></div>
+        </div>
         <div class="div"></div>
-        <div class="row" onclick="toast('▶ Playing','The Wayne Rooney Show')"><div class="row-art" style="background:linear-gradient(135deg,#1a1a2e,#2a1a4e);">🎙️</div><div class="row-info"><div class="row-title">The Wayne Rooney Show</div><div class="row-sub">Wayne's Chat With Van Dijk & McFly Duets</div><div class="row-dur">62 mins</div></div><div class="row-play"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg></div></div>
+        <div class="row" onclick="toast('▶ Playing','Test Match Special — The Ashes Day 2 review')">
+          <div class="row-art" style="background:linear-gradient(135deg,#1a2a1a,#2a5a2a);">🏏</div>
+          <div class="row-info"><div class="row-title">Test Match Special</div><div class="row-sub">The Ashes — Day 2 close of play review</div><div class="row-dur">48 mins</div></div>
+          <div class="row-play"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg></div>
+        </div>
+        <div class="div"></div>
+        <div class="row" onclick="toast('▶ Playing','5 Live Sport — F1 debrief')">
+          <div class="row-art" style="background:linear-gradient(135deg,#2a1a0a,#5a3a1a);">🏎️</div>
+          <div class="row-info"><div class="row-title">5 Live Sport</div><div class="row-sub">F1 British GP — Friday debrief</div><div class="row-dur">27 mins</div></div>
+          <div class="row-play"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg></div>
+        </div>
+        <div class="div"></div>
+        <div class="row" onclick="toast('▶ Playing','Romesh & Rob: The Sport Pod')">
+          <div class="row-art" style="background:linear-gradient(135deg,#1a0828,#2e1050);">😄</div>
+          <div class="row-info"><div class="row-title">Romesh &amp; Rob: The Sport Pod</div><div class="row-sub">Romesh Ranganathan &amp; Rob Beckett on sport, life &amp; nonsense</div><div class="row-dur">52 mins</div></div>
+          <div class="row-play"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg></div>
+        </div>
+        <div class="div"></div>
+        <div class="row" onclick="toast('▶ Playing','Wimbledon Daily — day 3 highlights')">
+          <div class="row-art" style="background:linear-gradient(135deg,#1a2a1a,#2a4a2a);">🎾</div>
+          <div class="row-info"><div class="row-title">Wimbledon Daily</div><div class="row-sub">Day 3 highlights, shocks &amp; talking points</div><div class="row-dur">22 mins</div></div>
+          <div class="row-play"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg></div>
+        </div>
       </div>
 
-      <!-- News -->
+      <!-- ══ NEWS TAB ══ -->
       <div id="ep4" class="ep" style="display:none;">
         <div class="sh"><h2>Latest News Playlist</h2></div>
         <div class="hscroll">
           <div class="nc" onclick="toast('▶ Playing','08:00 Headlines — 4 mins')"><div class="nc-art" style="background:linear-gradient(135deg,#2a0a0a,#6e1a1a);">📺<div class="nc-bdg">NEWS</div><div class="nc-play"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg></div></div><div class="nc-meta"><div class="nc-title">08:00 King in US, cancers, London zoo</div><div class="nc-dur">4 mins</div></div></div>
-          <div class="nc" onclick="toast('▶ Playing','Cancer study — 2 mins')"><div class="nc-art" style="background:linear-gradient(135deg,#0a1a2a,#1a3a5a);">🔬<div class="nc-bdg">NEWS</div><div class="nc-play"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg></div></div><div class="nc-meta"><div class="nc-title">Some cancers more common in people aged under 50 — study</div><div class="nc-dur">2 mins</div></div></div>
+          <div class="nc" onclick="toast('▶ Playing','Cancer study — 2 mins')"><div class="nc-art" style="background:linear-gradient(135deg,#0a1a2a,#1a3a5a);">🔬<div class="nc-bdg">NEWS</div><div class="nc-play"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg></div></div><div class="nc-meta"><div class="nc-title">Some cancers more common in people aged under 50</div><div class="nc-dur">2 mins</div></div></div>
           <div class="nc" onclick="toast('▶ Playing','King speaks at banquet — 5 mins')"><div class="nc-art" style="background:linear-gradient(135deg,#1a1a0a,#3a3a1a);">👑<div class="nc-bdg">NEWS</div><div class="nc-play"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg></div></div><div class="nc-meta"><div class="nc-title">King Charles speaks at banquet with Donald Trump</div><div class="nc-dur">5 mins</div></div></div>
         </div>
         <div class="sh"><h2>Live News</h2></div>
-        <div class="row" style="align-items:center;" onclick="toast('▶ Playing','Radio 4 — live now')"><div class="row-art sm" style="background:linear-gradient(135deg,#1a0a0a,#3a1a1a);">📻</div><div class="row-info"><div style="margin-bottom:3px;"><span class="lp" style="font-size:9px;padding:2px 6px;"><span class="d"></span>LIVE</span></div><div class="row-title" style="font-size:14px;">BBC Radio 4</div><div class="row-sub" style="font-size:12px;margin-bottom:0;">Today Programme · News & Talk</div></div><div class="row-play"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg></div></div>
+        <div class="row" style="align-items:center;" onclick="toast('▶ Playing','Radio 4 — live now')">
+          <div class="row-art sm" style="background:linear-gradient(135deg,#1a0a0a,#3a1a1a);">📻</div>
+          <div class="row-info"><div style="margin-bottom:3px;"><span class="lp" style="font-size:9px;padding:2px 6px;"><span class="d"></span>LIVE</span></div><div class="row-title" style="font-size:14px;">BBC Radio 4</div><div class="row-sub" style="font-size:12px;margin-bottom:0;">Today Programme · News &amp; Talk</div></div>
+          <div class="row-play"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg></div>
+        </div>
         <div class="div"></div>
-        <div class="row" style="align-items:center;" onclick="toast('▶ Playing','BBC World Service')"><div class="row-art sm" style="background:linear-gradient(135deg,#0a1a2a,#1a3a5a);">🌍</div><div class="row-info"><div style="margin-bottom:3px;"><span class="lp" style="font-size:9px;padding:2px 6px;"><span class="d"></span>LIVE</span></div><div class="row-title" style="font-size:14px;">BBC World Service</div><div class="row-sub" style="font-size:12px;margin-bottom:0;">Global news · 24/7 live</div></div><div class="row-play"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg></div></div>
+        <div class="row" style="align-items:center;" onclick="toast('▶ Playing','BBC World Service')">
+          <div class="row-art sm" style="background:linear-gradient(135deg,#0a1a2a,#1a3a5a);">🌍</div>
+          <div class="row-info"><div style="margin-bottom:3px;"><span class="lp" style="font-size:9px;padding:2px 6px;"><span class="d"></span>LIVE</span></div><div class="row-title" style="font-size:14px;">BBC World Service</div><div class="row-sub" style="font-size:12px;margin-bottom:0;">Global news · 24/7 live</div></div>
+          <div class="row-play"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg></div>
+        </div>
         <div class="sh"><h2>Beyond The Headlines</h2></div>
-        <div class="row" onclick="toast('▶ Playing','Newscast')"><div class="row-art" style="background:linear-gradient(135deg,#0a2a2a,#1a4a4a);">📣</div><div class="row-info"><div class="row-title">Newscast</div><div class="row-sub">The Morgan McSweeney Evidence</div><div class="row-dur">36 mins</div></div><div class="row-play"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg></div></div>
+        <div class="row" onclick="toast('▶ Playing','Newscast — Morgan McSweeney Evidence')">
+          <div class="row-art" style="background:linear-gradient(135deg,#0a2a2a,#1a4a4a);">📣</div>
+          <div class="row-info"><div class="row-title">Newscast</div><div class="row-sub">The Morgan McSweeney Evidence</div><div class="row-dur">36 mins</div></div>
+          <div class="row-play"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg></div>
+        </div>
+        <div class="div"></div>
+        <div class="row" onclick="toast('▶ Playing','The Media Show — Sam Altman investigation')">
+          <div class="row-art" style="background:linear-gradient(135deg,#1a1a0a,#3a3a1a);">📱</div>
+          <div class="row-info"><div class="row-title">The Explanation</div><div class="row-sub">The Media Show: Investigating Sam Altman</div><div class="row-dur">28 mins</div></div>
+          <div class="row-play"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg></div>
+        </div>
+        <div class="div"></div>
+        <div class="row" onclick="toast('▶ Playing','Hannah Fry — The Mathematics of Crime')">
+          <div class="row-art" style="background:linear-gradient(135deg,#0a1a2a,#1a3a5a);">🔢</div>
+          <div class="row-info"><div class="row-title">Hannah Fry: The Mathematics of Crime</div><div class="row-sub">How data is changing the way we solve crimes</div><div class="row-dur">44 mins</div></div>
+          <div class="row-play"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg></div>
+        </div>
       </div>
 
-      <!-- Children's -->
+      <!-- ══ CHILDREN'S TAB ══ -->
       <div id="ep5" class="ep" style="display:none;">
         <div class="sh"><h2>Children's Picks</h2></div>
         <div class="hscroll">
-          <div class="pl-card" onclick="toast('▶ Playing','CBeebies Bedtime Stories')"><div class="pl-art" style="background:linear-gradient(135deg,#1a2a4a,#2a4a8a);">🌙</div><div class="pl-ov"><div class="pl-count">7 Items</div><div class="pl-title">Bedtime Stories</div><div class="pl-desc">Calming stories to end the day</div><div class="pl-play"><svg viewBox="0 0 24 24" fill="white" width="14" height="14"><polygon points="5 3 19 12 5 21 5 3"/></svg></div></div></div>
-          <div class="pl-card" onclick="toast('▶ Playing','CBBC Favourites')"><div class="pl-art" style="background:linear-gradient(135deg,#2a1a0a,#5a3a1a);">🎒</div><div class="pl-ov"><div class="pl-count">10 Items</div><div class="pl-title">CBBC Favourites</div><div class="pl-desc">Podcasts and stories for older kids</div><div class="pl-play"><svg viewBox="0 0 24 24" fill="white" width="14" height="14"><polygon points="5 3 19 12 5 21 5 3"/></svg></div></div></div>
+          <div class="pl-card" onclick="toast('▶ Playing','CBeebies Bedtime Stories')">
+            <div class="pl-art" style="background:linear-gradient(135deg,#1a2a4a,#2a4a8a);">🌙</div>
+            <div class="pl-ov"><div class="pl-count">7 Items</div><div class="pl-title">Bedtime Stories</div><div class="pl-desc">Calming stories to end the day</div><div class="pl-play"><svg viewBox="0 0 24 24" fill="white" width="14" height="14"><polygon points="5 3 19 12 5 21 5 3"/></svg></div></div>
+          </div>
+          <div class="pl-card" onclick="toast('▶ Playing','CBBC Favourites')">
+            <div class="pl-art" style="background:linear-gradient(135deg,#2a1a0a,#5a3a1a);">🎒</div>
+            <div class="pl-ov"><div class="pl-count">10 Items</div><div class="pl-title">CBBC Favourites</div><div class="pl-desc">Podcasts and stories for older kids</div><div class="pl-play"><svg viewBox="0 0 24 24" fill="white" width="14" height="14"><polygon points="5 3 19 12 5 21 5 3"/></svg></div></div>
+          </div>
         </div>
         <div class="sh"><h2>New This Week</h2></div>
-        <div class="row" onclick="toast('▶ Playing','Horrible Histories Extra')"><div class="row-art" style="background:linear-gradient(135deg,#1a2a1a,#2a5a2a);">👑</div><div class="row-info"><div class="row-title">Horrible Histories Extra</div><div class="row-sub">Tudor special — with extra gore</div><div class="row-dur">22 mins</div></div><div class="row-play"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg></div></div>
+        <div class="row" onclick="toast('▶ Playing','Horrible Histories Extra — Tudor special')">
+          <div class="row-art" style="background:linear-gradient(135deg,#1a2a1a,#2a5a2a);">👑</div>
+          <div class="row-info"><div class="row-title">Horrible Histories Extra</div><div class="row-sub">Tudor special — with extra gore</div><div class="row-dur">22 mins</div></div>
+          <div class="row-play"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg></div>
+        </div>
+        <div class="div"></div>
+        <div class="row" onclick="toast('▶ Playing','Doctor Who: The Audio Adventures')">
+          <div class="row-art" style="background:linear-gradient(135deg,#0a1020,#1a2a40);">🚀</div>
+          <div class="row-info"><div class="row-title">Doctor Who: Audio Adventures</div><div class="row-sub">Brand new stories — Series 3</div><div class="row-dur">35 mins</div></div>
+          <div class="row-play"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg></div>
+        </div>
+        <div class="div"></div>
+        <div class="row" onclick="toast('▶ Playing','Shaun the Sheep: Baaad Day')">
+          <div class="row-art" style="background:linear-gradient(135deg,#1a2a1a,#2a4a2a);">🐑</div>
+          <div class="row-info"><div class="row-title">Shaun the Sheep</div><div class="row-sub">Baaad Day — a brand new story</div><div class="row-dur">14 mins</div></div>
+          <div class="row-play"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg></div>
+        </div>
       </div>
       <div class="scroll-end"></div>
     </div>
