@@ -524,7 +524,7 @@ body{background:#060606;min-height:100vh;margin:0;padding:0;font-family:var(--fo
     </div>
 
     <!-- Notification -->
-    <div class="notif" style="margin-top:8px;" onclick="toast('🔔 Reminder set','Glass Animals — alert at 22:15')"><div class="nb-icon">🔔</div><div class="nb-b"><div class="nb-t">Post-show with Rylan starts at 22:00</div><div class="nb-s">React, predict, get the insider story</div></div><div class="nb-cta">Remind →</div></div>
+    <div class="notif" style="margin-top:8px;" onclick="toast('🔔 Reminder set','Post-Show with Rylan — alert set for 22:00')"><div class="nb-icon">🔔</div><div class="nb-b"><div class="nb-t">Post-show with Rylan starts at 22:00</div><div class="nb-s">React, predict, get the insider story</div></div><div class="nb-cta">Remind →</div></div>
 
     <!-- Continue Listening — non-live content prominent -->
     <div class="sh" style="margin-top:10px;"><h2>Continue Listening</h2><a class="a">Manage list</a></div>
@@ -543,7 +543,7 @@ body{background:#060606;min-height:100vh;margin:0;padding:0;font-family:var(--fo
 
     <!-- Coming up -->
     <div class="sh"><h2>Coming Up</h2><a class="ao" onclick="goNav(2)">Full schedule</a></div>
-    <div class="row" style="align-items:center;" onclick="goNav(2)"><div class="row-art xs" style="background:linear-gradient(135deg,#1a0a1a,#2a1a2a);">🌲</div><div class="row-info"><div style="margin-bottom:3px;"><span class="up">Tonight 22:30 · in 43 min</span></div><div class="row-title" style="font-size:14px;">Glass Animals</div><div class="row-sub" style="font-size:12px;margin-bottom:0;">Woodsie Stage · Radio 6</div></div><button class="remind" id="sv1" onclick="event.stopPropagation();toggleSave('sv1','Glass Animals')">Remind me</button></div>
+    <div class="row" style="align-items:center;" onclick="goNav(2)"><div class="row-art xs" style="background:linear-gradient(135deg,#1a0a1a,#2a1a2a);">📺</div><div class="row-info"><div style="margin-bottom:3px;"><span class="up">Tonight 22:00 · in 13 min</span></div><div class="row-title" style="font-size:14px;">Post-Show with Rylan</div><div class="row-sub" style="font-size:12px;margin-bottom:0;">Reactions & reveals · BBC Sounds</div></div><button class="remind" id="sv1" onclick="event.stopPropagation();toggleSave('sv1','Post-Show with Rylan')">Remind me</button></div>
     <div class="row" style="align-items:center;" onclick="goNav(2)"><div class="row-art xs" style="background:linear-gradient(135deg,#0a1a0a,#1a4a1a);">🎵</div><div class="row-info"><div style="margin-bottom:3px;"><span class="up">Tomorrow · 20:30</span></div><div class="row-title" style="font-size:14px;">The Traitors: Uncloaked S2</div><div class="row-sub" style="font-size:12px;margin-bottom:0;">Post-show special · BBC Sounds</div></div><button class="remind saved" id="sv2" onclick="event.stopPropagation();toggleSave('sv2','The Traitors: Uncloaked S2')">Saved ✓</button></div>
 
     <!-- Fan Zone -->
@@ -589,7 +589,7 @@ body{background:#060606;min-height:100vh;margin:0;padding:0;font-family:var(--fo
         <div class="sh"><h2>Live Music Now</h2><a class="ao" onclick="goNav(2)">All streams</a></div>
         <div class="hscroll">
           <div class="ls-card" onclick="goNav(2)"><div class="ls-art" style="background:linear-gradient(135deg,#1c1506,#2e1a08);">⭐<div class="ls-badge"><span class="d"></span>Live</div></div><div class="ls-info"><div class="ls-stage" style="color:#E8A32A;">Celebrity Traitors</div><div class="ls-act">Celebrity Traitors</div><div class="ls-stn">Radio 2</div></div></div>
-          <div class="ls-card" onclick="toast('▶ Playing','6 Music — Lauren Laverne')"><div class="ls-art" style="background:linear-gradient(135deg,#1a0a2e,#4a0a6e);">6<div class="ls-badge"><span class="d"></span>Live</div></div><div class="ls-info"><div class="ls-stage">6 Music</div><div class="ls-act">Lauren Laverne</div><div class="ls-stn">Radio 6</div></div></div>
+          <div class="ls-card" onclick="toast('▶ Playing','BBC Radio 5 Live — The Ashes')"><div class="ls-art" style="background:linear-gradient(135deg,#1a2a1a,#2a5a2a);">🏏<div class="ls-badge"><span class="d"></span>Live</div></div><div class="ls-info"><div class="ls-stage">The Ashes</div><div class="ls-act">Eng vs Australia</div><div class="ls-stn">Radio 5 Live</div></div></div>
           <div class="ls-card" onclick="toast('▶ Playing','Radio 1 — Greg James')"><div class="ls-art" style="background:linear-gradient(135deg,#1a1a2e,#2a2a6e);">1<div class="ls-badge"><span class="d"></span>Live</div></div><div class="ls-info"><div class="ls-stage">Radio 1</div><div class="ls-act">Greg James</div><div class="ls-stn">Radio 1</div></div></div>
         </div>
         <div class="sh"><h2>Browse all Music</h2></div>
@@ -707,10 +707,10 @@ body{background:#060606;min-height:100vh;margin:0;padding:0;font-family:var(--fo
         <div style="position:absolute;bottom:0;left:0;right:0;background:linear-gradient(to top,rgba(0,0,0,.92) 0%,transparent 100%);padding:14px 18px 16px;">
           <div style="display:flex;align-items:center;gap:7px;margin-bottom:5px;">
             <span class="lp"><span class="d"></span>Live</span>
-            <span style="font-size:10px;font-weight:700;letter-spacing:.8px;text-transform:uppercase;color:rgba(255,255,255,.5);" id="stage-label">Celebrity Traitors · Pyramid Stage</span>
+            <span style="font-size:10px;font-weight:700;letter-spacing:.8px;text-transform:uppercase;color:rgba(255,255,255,.5);" id="stage-label">Series 2 · Episode 4 · BBC One</span>
           </div>
           <div style="font-family:var(--font-d);font-size:26px;font-weight:700;color:#fff;letter-spacing:-.4px;line-height:1;margin-bottom:2px;" id="artist-name">Celebrity Traitors S2</div>
-          <div style="font-size:12px;color:rgba(255,255,255,.55);margin-bottom:12px;" id="track-detail">Bad Guy · Radio 2 · 21:45–23:15</div>
+          <div style="font-size:12px;color:rgba(255,255,255,.55);margin-bottom:12px;" id="track-detail">The Banishment Ceremony · Now Playing</div>
           <div style="display:flex;align-items:center;gap:10px;">
             <button onclick="togglePlay()" style="width:44px;height:44px;border-radius:50%;background:var(--orange);display:flex;align-items:center;justify-content:center;flex-shrink:0;border:none;cursor:pointer;transition:opacity .15s;">
               <svg id="play-icon" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" width="18" height="18"><line x1="10" y1="15" x2="10" y2="9"/><line x1="14" y1="15" x2="14" y2="9"/></svg>
@@ -1020,9 +1020,9 @@ body{background:#060606;min-height:100vh;margin:0;padding:0;font-family:var(--fo
               <div class="csc-mid"><div class="csc-name">BBC Radio 5 Live</div><div class="csc-show">The Ashes — Day 3</div><div class="csc-stn">Radio 5 · Sport &amp; News</div></div>
               <div class="csc-right"><span class="csc-live"><span class="d"></span>LIVE</span></div>
             </div>
-            <div class="cat-stream-card" onclick="toast('▶ Playing','6 Music — Lauren Laverne')">
+            <div class="cat-stream-card" onclick="toast('▶ Playing','BBC Radio 5 Live — The Ashes')">
               <div class="csc-left"><div class="csc-art" style="background:linear-gradient(135deg,#1a0a2e,#4a0a6e);font-size:14px;font-weight:900;color:white;">6M</div></div>
-              <div class="csc-mid"><div class="csc-name">BBC 6 Music</div><div class="csc-show">Lauren Laverne</div><div class="csc-stn">6 Music · Alternative</div></div>
+              <div class="csc-mid"><div class="csc-name">BBC Radio 5 Live</div><div class="csc-show">The Ashes Day 3</div><div class="csc-stn">Radio 5 · Sport & News</div></div>
               <div class="csc-right"><span class="csc-live"><span class="d"></span>LIVE</span></div>
             </div>
             <div class="cat-stream-card" onclick="toast('▶ Playing','Asian Network — Breakfast')">
@@ -1049,7 +1049,7 @@ body{background:#060606;min-height:100vh;margin:0;padding:0;font-family:var(--fo
             <div style="display:flex;gap:10px;overflow-x:auto;scrollbar-width:none;padding-bottom:8px;margin:0 -14px;padding-left:14px;padding-right:14px;">
               <!-- Each card has a canvas animation -->
               <div class="raw-feed-card" onclick="toast('📡 Opened','Traitors Lair secret cam — full screen')">
-                <canvas class="raw-canvas" id="rc0" data-hue="30" data-label="Backstage · Glasto"></canvas>
+                <canvas class="raw-canvas" id="rc0" data-hue="30" data-label="Traitors Lair · BBC Sounds"></canvas>
                 <div class="rfc-overlay">
                   <div class="rfc-top"><span class="rfc-live"><span class="d"></span>RAW</span><span class="rfc-viewers">6.1k</span></div>
                   <div class="rfc-bottom">
